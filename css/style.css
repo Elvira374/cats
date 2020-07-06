@@ -210,16 +210,15 @@ footer {
 
 
 
-
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1440px) {
     .title-h1 {
         font-size: 15rem;
     }
-
     .title-text {
         font-size: 10rem;
     }
-
+}
+@media screen and (max-width: 1300px) {
     .number {
         font-size: 8rem;
     }
