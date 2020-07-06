@@ -179,6 +179,7 @@ input[type="email"],
 input[type="tel"] {
     width: 100%;
     text-align: center;
+    color: #555;
 }
 
 input[type="submit"] {
