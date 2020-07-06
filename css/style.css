@@ -1,0 +1,356 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+/*--------------------------------------------------------
+    Global
+----------------------------------------------------------*/
+* {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+}
+
+html,
+body {
+    font-family: 'Hind', sans-serif;
+    color: #212121;
+    height: 100vh;
+}
+
+.container {
+    max-width: 1170px;
+}
+
+.title-h1 {
+    font-size: 25rem;
+    font-weight: 700;
+    letter-spacing: 0.2rem;
+}
+
+.title-h2 {
+    font-size: 10rem;
+}
+
+.title-h2 span {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 60px;
+    background: red;
+}
+
+a.btn {
+    color: #fff;
+    display: inline-block;
+    padding: 2% 4%;
+    border: 1px solid red;
+    -webkit-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+    border-radius: 50px;
+    background: red;
+}
+
+a.btn:hover {
+    -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+            transform: scale(1.2);
+}
+
+/*--------------------------------------------------------
+    Header
+----------------------------------------------------------*/
+header {
+    background: url(../img/cat-01.jpg) no-repeat bottom;
+    background-size: cover;
+    text-align: center;
+    padding-top: 20px;
+    height: 100%;
+}
+
+nav a {
+    color: #fff;
+    display: inline-block;
+    padding: 2% 4%;
+    border: 1px solid transparent;
+    -webkit-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+nav a:hover {
+    border: 1px solid red;
+    border-radius: 50px;
+    background: red;
+}
+
+.title {
+    padding: 20% 0 5%;
+    text-align: left;
+    position: relative;
+}
+
+.title-text {
+    position: absolute;
+    bottom: 0;
+    left: 20%;
+    color: rgba(255, 255, 255, .5);
+    font-size: 20rem;
+    font-weight: 700;
+}
+
+.number {
+    font-size: 15rem;
+}
+
+.number::after {
+    content: "";
+    display: inline-block;
+    height: 1.5em;
+    width: 3px;
+    background: red;
+}
+
+.mobile {
+    display: none;
+}
+
+/*--------------------------------------------------------
+    About
+----------------------------------------------------------*/
+.section-about {
+    background: url(../img/cat-02.jpg) no-repeat center;
+    background-size: cover;
+    padding: 15% 0 2%;
+}
+
+.section-about .number {
+    padding-top: 50%;
+}
+
+/*--------------------------------------------------------
+    Services__01
+----------------------------------------------------------*/
+.section-services__01 {
+    background: url(../img/cat-03.jpg) no-repeat top;
+    background-size: cover;
+    padding: 10% 0 10%;
+    color: #fff;
+}
+
+.section-services__01 .number {
+    padding-top: 50%;
+}
+
+/*--------------------------------------------------------
+    Services__02
+----------------------------------------------------------*/
+.section-services__02 {
+    background: url(../img/cat-04.jpg) no-repeat top;
+    background-size: cover;
+    padding: 5% 0 15%;
+}
+
+.section-services__02 .number {
+    padding-top: 50%;
+}
+
+/*--------------------------------------------------------
+    Section-form
+----------------------------------------------------------*/
+.section-form {
+    background: #212121;
+    padding: 5% 0 0;
+    text-align: center;
+    color: #fff;
+}
+
+.section-form .title-h2 span {
+    margin: 0 auto;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+    width: 100%;
+    text-align: center;
+}
+
+input[type="submit"] {
+    color: #fff;
+    border: 1px solid red;
+    border-radius: 50px;
+    background: red;
+}
+
+input[type="submit"]:hover {
+    border: 1px solid transparent;
+}
+
+.section-form__phone {
+    font-size: 4rem;
+}
+
+/*--------------------------------------------------------
+    Footer
+----------------------------------------------------------*/
+footer {
+    background: #212121;
+    padding: 1%;
+    text-align: center;
+    color: #fff;
+}
+
+
+
+
+
+
+@media screen and (max-width: 1300px) {
+    .title-h1 {
+        font-size: 15rem;
+    }
+
+    .title-text {
+        font-size: 10rem;
+    }
+
+    .number {
+        font-size: 8rem;
+    }
+
+    .title-h2 {
+        font-size: 8rem;
+    }
+}
+
+@media screen and (max-width: 1220px) {
+    .desktop {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+    }
+
+    /* Nav-start*/
+    .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 2;
+        top: 0;
+        left: 0;
+        background: rgba(0, 0, 0, .8);
+        overflow-x: hidden;
+        padding-top: 60px;
+        -webkit-transition: 0.5s;
+        -o-transition: 0.5s;
+        transition: 0.5s;
+    }
+
+    .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        color: #fff;
+        display: block;
+        -webkit-transition: 0.3s;
+        -o-transition: 0.3s;
+        transition: 0.3s;
+        text-align: center;
+    }
+
+    .sidenav a:hover {
+        -webkit-transform: scale(1.2);
+            -ms-transform: scale(1.2);
+                transform: scale(1.2);
+    }
+
+    .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 2%;
+        font-size: 36px;
+        page-break-after: 2%;
+    }
+
+    #main {
+        -webkit-transition: margin-left .5s;
+        -o-transition: margin-left .5s;
+        transition: margin-left .5s;
+        padding: 20px;
+    }
+
+    .nav-btn:hover {
+        cursor: pointer;
+    }
+
+    .nav-btn:hover .nav-line-01,
+    .nav-btn:hover .nav-line-02,
+    .nav-btn:hover .nav-line-03 {
+        width: 50px;
+    }
+
+    .nav-line-01 {
+        content: "";
+        display: block;
+        width: 30px;
+        height: 2px;
+        background: rgb(255, 0, 0);
+        ;
+        margin: 10px 0;
+        -webkit-transition: all 0.3s;
+        -o-transition: all 0.3s;
+        transition: all 0.3s;
+    }
+
+    .nav-line-02 {
+        content: "";
+        display: block;
+        width: 20px;
+        height: 2px;
+        background: rgb(255, 0, 0);
+        ;
+        margin: 10px 0;
+        -webkit-transition: all 0.3s;
+        -o-transition: all 0.3s;
+        transition: all 0.3s;
+    }
+
+    .nav-line-03 {
+        content: "";
+        display: block;
+        width: 30px;
+        height: 2px;
+        background: rgb(255, 0, 0);
+        margin: 10px 0;
+        -webkit-transition: all 0.3s;
+        -o-transition: all 0.3s;
+        transition: all 0.3s;
+    }
+
+    /* Nav-end*/
+}
+
+@media screen and (max-width: 680px) {
+    .title-h1 {
+        font-size: 10rem;
+    }
+
+    .title-text {
+        font-size: 5rem;
+    }
+
+    .number {
+        font-size: 4rem;
+    }
+
+    .title-h2 {
+        font-size: 4rem;
+    }
+}
